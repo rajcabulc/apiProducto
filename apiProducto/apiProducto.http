@@ -1,0 +1,19 @@
+@apiProducto_HostAddress = https://localhost:7107
+
+###
+
+POST {{apiProducto_HostAddress}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Silla gamer Cougar Armor One",
+  "precio": 1899.00,
+  "stock": 6
+}
+
+###
+
+@id=5
+GET {{apiProducto_HostAddress}}/api/productos/{{id}}
+
+###
